@@ -1,10 +1,12 @@
 package main
 
 import (
+	_ "docs"
 	"errors"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	"github.com/swaggo/gin-swagger"
 )
 
 type book struct {
@@ -98,6 +100,16 @@ func createBook(c *gin.Context) {
 	books = append(books, newBook)
 	c.IndentedJSON(http.StatusCreated, newBook)
 }
+
+// @title Go + Book API
+// @version 1.0
+
+// @license.name MIT
+// @license.url https://opensource.org/licenses/MIT
+
+// @host localhost:8080
+// @BasePath /
+// @query.collection.format multi
 
 func main() {
 	router := gin.Default()
