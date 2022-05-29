@@ -1,15 +1,17 @@
 {
     "swagger": "2.0",
     "info": {
-        "title": "Go + Book API",
-        "contact": {},
+        "description": "This is a library API",
+        "title": "Library API",
+        "termsOfService": "N/A",
+        "contact": {
+            "name": "API Support"
+        },
         "license": {
-            "name": "MIT",
-            "url": "https://opensource.org/licenses/MIT"
+            "name": "MITLicense"
         },
         "version": "1.0"
     },
     "host": "localhost:8080",
-    "basePath": "/",
     "paths": {}
 }

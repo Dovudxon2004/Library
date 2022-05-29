@@ -1,11 +1,12 @@
-basePath: /
 host: localhost:8080
 info:
-  contact: {}
+  contact:
+    name: API Support
+  description: This is a library API
   license:
-    name: MIT
-    url: https://opensource.org/licenses/MIT
-  title: Go + Book API
+    name: MITLicense
+  termsOfService: N/A
+  title: Library API
   version: "1.0"
 paths: {}
 swagger: "2.0"

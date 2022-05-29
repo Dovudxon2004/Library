@@ -10,10 +10,12 @@ const docTemplate = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "contact": {},
+        "termsOfService": "N/A",
+        "contact": {
+            "name": "API Support"
+        },
         "license": {
-            "name": "MIT",
-            "url": "https://opensource.org/licenses/MIT"
+            "name": "MITLicense"
         },
         "version": "{{.Version}}"
     },
@@ -26,10 +28,10 @@ const docTemplate = `{
 var SwaggerInfo = &swag.Spec{
 	Version:          "1.0",
 	Host:             "localhost:8080",
-	BasePath:         "/",
+	BasePath:         "",
 	Schemes:          []string{},
-	Title:            "Go + Book API",
-	Description:      "",
+	Title:            "Library API",
+	Description:      "This is a library API",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 }
